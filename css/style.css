@@ -1,0 +1,34 @@
+/* Add these to maintain consistency across pages */
+.content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.highlight-card, 
+.core-card, 
+.club-card, 
+.project-card, 
+.contact-card {
+    background: #F8F9FA;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border-left: 3px solid var(--primary);
+}
+
+/* Responsive grid for cards */
+@media (min-width: 768px) {
+    .highlights {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .core-container,
+    .club-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
